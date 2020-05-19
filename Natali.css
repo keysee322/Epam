@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+html{
+	  scroll-behavior: smooth;
+}
 body{
 	font-family: "Noto Sans";
 	background-color: rgba(153, 109, 84, 0.69);
 	padding: 1.2%  1.2%  1.2%  calc(1.2%);
 	padding-right: calc(1.2% + 12px);
+	scroll-behavior: smooth;
 }
 .container{
 	position: absolute;
@@ -79,16 +83,18 @@ a{
 	left: 8vw;
 	margin-top: 2vw;
 	background-color: #996D54;
-
+	padding-top: 1vw;
+	padding-bottom: 1vw;
 	text-align: center;
 	color: black;
 	border: 2px solid #996D54;
 	text-decoration: none;
 	font-size: 2.5vw;
+	transition: linear .2s;
 }
 a:hover{
 	background-color: rgba(153, 109, 84, 1);;
-	transition: linear .2s;
+	
 		color: white;
 }
 .second{
@@ -165,6 +171,7 @@ button{
 	border: 2px solid;
 	margin-top: 10%;
 	transition: linear .2s;
+	cursor: pointer;
 }
 
 button:hover{
