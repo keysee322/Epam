@@ -163,6 +163,16 @@ button{
 	font-size: 2vw;
 	background-color: white;
 	border: 2px solid;
+	margin-top: 10%;
+	transition: linear .2s;
+}
+
+button:hover{
+	width: 100%;
+	height: 20%;
+	font-size: 2vw;
+	background-color: rgba(153, 109, 84, 0.69);
+	border: 2px solid;
 	margin-top: 10%
 }
 
