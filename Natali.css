@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+body{
+	font-family: "Noto Sans";
+	background-color: rgba(153, 109, 84, 0.69);
+	padding: 1.2%  1.2%  1.2%  calc(1.2%);
+	padding-right: calc(1.2% + 12px);
+}
+.container{
+	position: absolute;
+	background-color: white;
+	width: calc(97.6% - 12px);
+	margin: auto;
+
+}
+img{
+	position: absolute;
+}
+.first{
+	height: 55vw;
+		height: 56.8vw;
+}
+.fon1{
+	position: absolute;
+	left: calc(38vw);
+	top: 5vw;
+	width: 30.72vw;
+	height: 36.59vw;
+	background: url("1-1.jpg") ;
+	background-size: cover;
+	z-index: 3;
+}
+
+.fon2{
+	position: absolute;
+	left: calc(62vw);
+	top: 12vw;
+	width: 30.72vw;
+	height: 33.59vw; 
+	background: url("2-2.jpg") ;
+	background-size: cover;
+	z-index: 4;
+}
+
+.fon3{
+	position: absolute;
+	left: calc(22vw);
+	top: calc(15vw - 3px);
+	width: 23.72vw;
+	height: 30.59vw;
+	border: 2px solid #996D54;
+	background-size: cover;
+	z-index: 2;
+	background-color: white;
+}
+.fon4{
+	position: absolute;
+	left: calc(4vw);
+	top: calc(9vw - 3px);
+	width: 23.72vw;
+	height: 30.59vw;
+	border: 2px solid #996D54;
+	background-size: cover;
+}
+.left1{
+	position: absolute;
+	top: 18vw;
+	width: 30vw;
+	left: 8vw;
+	font-size: 3vw;
+	text-align: center;
+	z-index: 4;
+}
+.left{
+	background-color: rgba(255,255,255,1);
+}
+a{	
+	position: absolute;
+	width: 14vw;
+	left: 8vw;
+	margin-top: 2vw;
+	background-color: #996D54;
+
+	text-align: center;
+	color: black;
+	border: 2px solid #996D54;
+	text-decoration: none;
+	font-size: 2.5vw;
+}
+a:hover{
+	background-color: rgba(153, 109, 84, 1);;
+	transition: linear .2s;
+		color: white;
+}
+.second{
+	background-color: white;
+	height: 45vw;
+	padding-left: 4vw;
+}
+.second_fon{
+	top: calc(9vw - 3px);
+	width: 23.72vw;
+	height: 35.59vw;
+	background-image: url("3.jpg");
+	background-size: cover;
+}
+.right2{
+	text-align: justify;
+	font-size: 1.2vw;
+	margin-top: -30vw;
+	margin-left: 37vw;
+	width: 50%;
+}
+
+.third{
+	height: 65vw;
+	padding-left: 4vw;	
+}
+#first{
+	width: 25vw;
+	height: 22vw;
+	position: absolute;
+
+}
+#firstpic{
+	width: 100%;
+	height: 80%;
+	background-image: url(31.png);
+	background-size: cover;
+}
+.fake{
+	padding-top: 20%;
+	background: rgba(49, 19, 2, 0.54);
+	height: 71.4%;
+	width: 100%;
+}
+.faketext{
+
+	font-size: 2.5vw;
+	color: white;
+	font-weight: normal;
+	text-align: center;
+	top: 20%;
+	background-color: rgba(64, 25, 3, 0.31);
+}
+
+
+#second{
+
+	margin-left: 32.5%;
+	width: 25vw;
+	height: 22vw;
+	position: absolute;
+}
+#secondpic{
+	width: 100%;
+	height: 80%;
+	background-image: url(32.jpg);
+	background-size: cover;
+}
+button{
+	width: 100%;
+	height: 20%;
+	font-size: 2vw;
+	background-color: white;
+	border: 2px solid;
+	margin-top: 10%
+}
+
+#third{
+
+	margin-left: 65%;
+	width: 25vw;
+	height: 22vw;
+}
+#thirdpic{
+	width: 100%;
+	height: 80%;
+	background-image: url(33.jpg);
+	background-size: cover;
+}
+.faketext1{
+
+	font-size: 2.5vw;
+	color: white;
+	font-weight: normal;
+	text-align: center;
+	top: 20%;
+	padding-top: 6.9%;
+	padding-bottom: 6.9%;
+	background-color: rgba(64, 25, 3, 0.31);
+}
+
+#four{
+
+	margin-left: 32.5%;
+	width: 25vw;
+	height: 22vw;
+	position: absolute;
+	left: -12.5%;
+	margin-top: 7vw;
+}
+#fourpic{
+	width: 100%;
+	height: 80%;
+	background-image: url(34.jpg);
+	background-size: cover;
+}
+
+#five{
+
+	margin-left: 32.5%;
+	width: 25vw;
+	height: 22vw;
+	position: absolute;
+	left: 19%;
+	margin-top: 7vw;
+}
+#fivepic{
+	width: 100%;
+	height: 80%;
+	background-image: url(35.png);
+	background-size: cover;
+}
+h1{
+	font-size: 2.5vw;
+}
