@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="animate.js"></script>
+	<meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="Natali.css">
+	<title>3d</title>
+</head>
+<body>
+	<script type="text/javascript">
+		 function makeEaseOut(timing) {
+      return function(timeFraction) {
+        return 1 - timing(1 - timeFraction);
+      }
+    }
+
+        function quad(timeFraction) {
+  return Math.pow(timeFraction, 10);
+}
+
+let quadEaseOut = makeEaseOut(quad);
+
+
+
+var bool1 = true;
+var bool2 = true;
+var bool3 = true;
+var bool4 = true;
+var bool5 = true;
+
+		function Show(){
+			
+			
+			
+			if (bool1 == true) {
+				
+				document.getElementById("button").textContent = "Скрыть";
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("first").style.height = 25 + progress * 4 + "vw";
+        }
+      }); 
+			         var t = document.createElement("a");
+			            t.setAttribute("id","href1");
+			            t.setAttribute("href","1.html");
+			            t.textContent = "Интерфейс и примитивы";
+			            document.getElementById("first").appendChild(t);
+			            animate({
+        duration: 2000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("href1").style.opacity =progress;
+        }
+      }); 
+
+
+
+			if (bool2 == true && bool3 == true){
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("four").style.marginTop = 30 + progress * 7 + "vw";
+        }
+      }); 
+		animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("five").style.marginTop = 30 + progress * 7 + "vw";
+        }
+      }); }
+			
+		} else if(bool1 == false) {
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("href1").style.opacity = -progress + 1;
+        }
+      }); 
+			setTimeout(Delete,600);
+			function Delete(){
+				e3 = document.getElementById('href1');
+            e3.parentNode.removeChild(e3);
+			}
+			document.getElementById("button").textContent = "Перейти к изучению";
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("first").style.height = 29 + -progress * 4 + "vw";
+        }
+      }); 
+			if (bool2 == true && bool3 == true) {
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("four").style.marginTop = 37 + -progress * 7 + "vw";
+        }
+      }); 
+		animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("five").style.marginTop = 37 + -progress * 7 + "vw";
+        }
+      }); }
+		}
+		bool1 = !bool1;
+		}
+
+
+
+
+		function Show1(){
+			if (bool2 == true) {
+				
+				document.getElementById("button1").textContent = "Скрыть";
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("second").style.height = 25 + progress * 7 + "vw";
+        }
+      }); 
+
+						         var t = document.createElement("a");
+			            t.setAttribute("id","href2");
+			            t.setAttribute("href","2.html");
+			            t.textContent = "Параметрические модификаторы";
+			            document.getElementById("second").appendChild(t);
+
+var t = document.createElement("br");
+t.setAttribute("id","br1");
+			            document.getElementById("second").appendChild(t);
+
+			            var t = document.createElement("a");
+			            t.setAttribute("id","href3");
+			            t.setAttribute("href","#medium");
+			            t.textContent = "Назначение и настройка модификаторов";
+			            document.getElementById("second").appendChild(t);
+
+			            animate({
+        duration: 2000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("href2").style.opacity =progress;
+          document.getElementById("href3").style.opacity =progress;
+        }
+      });
+
+
+			if (bool1 == true && bool3 == true){
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("four").style.marginTop = 30 + progress * 7 + "vw";
+        }
+      }); 
+		animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("five").style.marginTop = 30 + progress * 7 + "vw";
+        }
+      }); }
+			
+		} else if(bool2 == false) {
+						animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("href2").style.opacity = -progress + 1;
+        }
+      }); 
+		animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("href3").style.opacity = -progress + 1;
+        }
+      }); 
+
+			setTimeout(Delete,400);
+			function Delete(){
+				e3 = document.getElementById('href2');
+            e3.parentNode.removeChild(e3);
+            e3 = document.getElementById('br1');
+            e3.parentNode.removeChild(e3);
+            e3 = document.getElementById('href3');
+            e3.parentNode.removeChild(e3);
+			}
+			document.getElementById("button1").textContent = "Перейти к изучению";
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("second").style.height = 32 + -progress * 7 + "vw";
+        }
+      }); 
+			if (bool1 == true && bool3 == true){
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("four").style.marginTop = 37 + -progress * 7 + "vw";
+        }
+      }); 
+		animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("five").style.marginTop = 37 + -progress * 7 + "vw";
+        }
+      }); }
+		}
+		bool2 = !bool2;
+		}
+
+		function Show2(){
+			
+			
+			
+			if (bool3 == true) {
+				
+				document.getElementById("button2").textContent = "Скрыть";
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("third").style.height = 25 + progress * 5.5 + "vw";
+        }
+      }); 
+			 var t = document.createElement("a");
+			            t.setAttribute("id","href4");
+			            t.setAttribute("href","3.html");
+			            t.textContent = "Основы создания сплайнов";
+			            document.getElementById("third").appendChild(t);
+
+var t = document.createElement("br");
+t.setAttribute("id","br2");
+			            document.getElementById("third").appendChild(t);
+
+			            var t = document.createElement("a");
+			            t.setAttribute("id","href5");
+			            t.setAttribute("href","#medium");
+			            t.textContent = "Модификатор Surface";
+			            document.getElementById("third").appendChild(t);
+
+			            animate({
+        duration: 2000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("href4").style.opacity =progress;
+          document.getElementById("href5").style.opacity =progress;
+        }
+      });
+			if (bool2 == true && bool1 == true){
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("four").style.marginTop = 30 + progress * 7 + "vw";
+        }
+      }); 
+		animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("five").style.marginTop = 30 + progress * 7 + "vw";
+        }
+      }); }
+			
+		} else if(bool3 == false) {
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("href4").style.opacity = -progress + 1;
+        }
+      }); 
+		animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("href5").style.opacity = -progress + 1;
+        }
+      }); 
+
+			setTimeout(Delete,400);
+			function Delete(){
+				e3 = document.getElementById('href4');
+            e3.parentNode.removeChild(e3);
+            e3 = document.getElementById('br2');
+            e3.parentNode.removeChild(e3);
+            e3 = document.getElementById('href5');
+            e3.parentNode.removeChild(e3);
+			}
+			document.getElementById("button2").textContent = "Перейти к изучению";
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("third").style.height = 30.5 + -progress * 5.5 + "vw";
+        }
+      }); 
+			if (bool2 == true && bool1 == true) {
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("four").style.marginTop = 37 + -progress * 7 + "vw";
+        }
+      }); 
+		animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("five").style.marginTop = 37 + -progress * 7 + "vw";
+        }
+      }); }
+		}
+		bool3 = !bool3;
+		}
+
+		function Show3(){
+
+			if (bool4 == true) {
+				
+				document.getElementById("button3").textContent = "Скрыть";
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("four").style.height = 25 + progress * 9 + "vw";
+        }
+      }); 
+
+			 var t = document.createElement("a");
+			            t.setAttribute("id","href6");
+			            t.setAttribute("href","#medium");
+			            t.textContent = "Введение в полигональное моделирование";
+			            document.getElementById("four").appendChild(t);
+
+var t = document.createElement("br");
+t.setAttribute("id","br3");
+			            document.getElementById("third").appendChild(t);
+
+			            var t = document.createElement("a");
+			            t.setAttribute("id","href7");
+			            t.setAttribute("href","#medium");
+			            t.textContent = "5 модификаторов, меняющие количество полигонов";
+			            document.getElementById("four").appendChild(t);
+
+			            animate({
+        duration: 2000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("href6").style.opacity =progress;
+          document.getElementById("href7").style.opacity =progress;
+        }
+      });
+
+
+
+
+
+			
+		} else if(bool4 == false) {
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("href6").style.opacity = -progress + 1;
+        }
+      }); 
+		animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("href7").style.opacity = -progress + 1;
+        }
+      }); 
+
+			setTimeout(Delete,400);
+			function Delete(){
+				e3 = document.getElementById('href6');
+            e3.parentNode.removeChild(e3);
+            e3 = document.getElementById('br3');
+            e3.parentNode.removeChild(e3);
+            e3 = document.getElementById('href7');
+            e3.parentNode.removeChild(e3);
+			}
+
+			document.getElementById("button3").textContent = "Перейти к изучению";
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("four").style.height = 34 + -progress * 9 + "vw";
+        }
+      }); 
+		}
+		bool4 = !bool4;
+		}
+
+		function Show4(){
+
+			if (bool5 == true) {
+				
+				document.getElementById("button4").textContent = "Скрыть";
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("five").style.height = 25 + progress * 4 + "vw";
+        }
+      }); 
+			 var t = document.createElement("a");
+			            t.setAttribute("id","href8");
+			            t.setAttribute("href","#medium");
+			            t.textContent = "Редактор материалов";
+			            document.getElementById("five").appendChild(t);
+			            animate({
+        duration: 2000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("href8").style.opacity =progress;
+        }
+      }); 
+
+			
+		} else if(bool5 == false) {
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("href8").style.opacity = -progress + 1;
+        }
+      }); 
+			setTimeout(Delete,600);
+			function Delete(){
+				e3 = document.getElementById('href8');
+            e3.parentNode.removeChild(e3);
+			}
+			document.getElementById("button4").textContent = "Перейти к изучению";
+			animate({
+        duration: 1000,
+        timing: quadEaseOut,
+        draw: function(progress) {
+          document.getElementById("five").style.height = 29 + -progress * 4 + "vw";
+        }
+      }); 
+		}
+		bool5 = !bool5;
+		}
+	</script>
+<div class="container">
+  <div class="first">
+
+
+	<div class="fon1"> </div>
+	<div class="fon2"> </div>
+	<div class="fon3"> </div>
+	<div class="fon4"> </div>
+
+
+<div class="left1">
+	<div class="left">
+	Обучение основам 3D моделирования
+</div>
+
+<a id="ssil" href="#1">Начать</a>
+</div>
+	</div>
+
+	<div class="second">
+		<div class="second_fon"></div>
+		<div class="right2">
+			<h1> Для кого будет полезно?</h1>
+			
+			<p>Наши уроки будут интересны и полезны, в первую очередь, тем, кто только начинает осваивать 3D моделирование. Мы надеемся, что информация, полученная, в процессе обучения создаст хороший фундамент для дальнейшей работы в даннной сфере.</p>
+				3D моделирование – востребованное направление IT-индустрии. Настоящее искусство, открывающее широкие перспективы тем, кто решил освоить трехмерную графику. Сегодня с помощью программ трехмерного моделирования создают архитектурные проекты, игры, спецэффекты в кино, применяют в медицине и во множестве других отраслей.
+		</div>
+	</div>
+
+<section id="1"></section>
+	<div class="third">
+
+		<h1>Уроки по 3D MAX</h1><br>
+		<div id="first">
+			<div id="firstpic">
+				<div class="fake">
+					<div class="faketext">Интерфейс и <br>примитивы</div>
+				</div>
+			</div>
+			<button id="button" onclick="Show()">Перейти к изучению</button>
+		</div>
+
+		<div id="second">
+			<div id="secondpic">
+				<div class="fake">
+					<div class="faketext1">Модификаторы</div>
+				</div>
+			</div>
+			<button id="button1" onclick="Show1()">Перейти к изучению</button>
+		</div>
+
+		<div id="third">
+			<div id="thirdpic">
+				<div class="fake">
+					<div class="faketext1">Сплайны</div>
+				</div>
+			</div>
+			<button id="button2" onclick="Show2()">Перейти к изучению</button>
+		</div>
+
+		<div id="four">
+			<div id="fourpic">
+				<div class="fake">
+					<div class="faketext">Полигональное<br>моделирование</div>
+				</div>
+			</div>
+			<button id="button3" onclick="Show3()">Перейти к изучению</button>
+		</div>
+
+		<div id="five">
+			<div id="fivepic">
+				<div class="fake">
+					<div class="faketext">Редактор<br>материалов</div>
+				</div>
+			</div>
+			<button id="button4" onclick="Show4()">Перейти к изучению</button>
+		</div>
+
+	</div>
+</div>
+</body>
+</html>
