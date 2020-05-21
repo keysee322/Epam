@@ -8,7 +8,7 @@ body{
 	padding: 1.2%  1.2%  1.2%  calc(1.2%);
 	padding-right: calc(1.2% + 12px);
 	scroll-behavior: smooth;
-	font-size: 1.2vw;
+	margin-bottom: 10vw;
 }
 .container{
 	position: absolute;
